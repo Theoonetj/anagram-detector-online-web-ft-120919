@@ -11,7 +11,7 @@ class Anagram
     puts "Must find #{self.word_to_analyze} inside the following string: #{find_anagram_in_this_string}"
     find_anagram_in_this_string.find_all do |given_word| 
       if given_word.split("").sort == self.word_to_analyze.split("").sort 
-        word 
+        given_word
       end
     end 
   end
